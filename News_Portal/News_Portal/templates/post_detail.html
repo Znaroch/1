@@ -1,0 +1,30 @@
+{% extends 'flatpages/default.html' %}
+
+{% load custom_filters %}
+
+{% block title %} Post list {% endblock title %}
+
+{% block content %}
+<table>
+    <thead>
+        <td> Заголовок </td>
+        <td> Дата публикации </td>
+        <td> Содержание </td>
+        <td> Автор </td>
+        <td> Категория </td>
+        <td> Тип </td>
+    </thead>
+        <tr>
+            <td>{{ post.title|censor }}</td>
+            <td>{{ post.date|date:'d M Y' }}</td>
+            <td>{{ post.text|censor }}</td>
+            <td>{{post.author }}</td>
+            <td>
+                {% for cat in post.category.all %}
+                    {{ cat.name }}
+                {% endfor %}
+            </td>
+            <td>{{ post.type }}</td>
+        </tr>
+</table>
+{% endblock content %}

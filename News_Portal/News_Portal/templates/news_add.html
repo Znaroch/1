@@ -1,0 +1,19 @@
+{% extends 'flatpages/default.html' %}
+{% load i18n %}
+{% load custom_filters %}
+{% block title %}
+<hr>
+<h1>{% trans 'Add news:'%}</h1>
+<hr>
+{% endblock title %}
+
+{% block content %}
+<h3>{% trans 'Fill in the fields to create news or article:' %}</h3>
+<form method="POST">
+  {% csrf_token %}
+    {{ form }}
+    <hr>
+  <hr>
+  <input type="submit" value="{% trans 'Add' %}">
+</form>
+{% endblock content %}

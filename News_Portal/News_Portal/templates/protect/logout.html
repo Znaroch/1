@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ request.user.username }}, вы вышли из личного кабинета!</title>
+</head>
+<body>
+  <button><a href="{% url 'home' %}">На главную страницу</a></button>
+  <button><a href="{% url 'profile' %}">Войти или зарегистрироваться</a></button>
+</body>
+</html>

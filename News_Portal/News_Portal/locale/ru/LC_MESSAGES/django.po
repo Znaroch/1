@@ -1,0 +1,128 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-04-06 15:13+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
+"(n%100>=11 && n%100<=14)? 2 : 3);\n"
+#: .\fpages\admin.py:11
+msgid "Advanced options"
+msgstr ""
+
+#: .\news_p\forms.py:23 .\templates\all_news.html:26
+msgid "Title"
+msgstr "Заголовок"
+
+#: .\news_p\forms.py:24
+msgid "Text"
+msgstr "Текст"
+
+#: .\news_p\forms.py:25
+msgid "Author"
+msgstr "Автор"
+
+#: .\news_p\forms.py:26 .\templates\all_news.html:27
+msgid "Category"
+msgstr "Категория"
+
+#: .\news_p\forms.py:27
+msgid "Type"
+msgstr "Тип"
+
+#: .\news_p\models.py:35
+msgid "category_name"
+msgstr "Имя категории"
+
+#: .\news_p\models.py:46
+msgid "News"
+msgstr "Новость"
+
+#: .\news_p\models.py:46
+msgid "Article"
+msgstr "Статья"
+
+#: .\templates\all_news.html:8
+msgid "All news:"
+msgstr "Все новости:"
+
+#: .\templates\all_news.html:9
+msgid "News search:"
+msgstr "Поиск новостей:"
+
+#: .\templates\all_news.html:15
+msgid "Number of news items:"
+msgstr "Количество новостей:"
+
+#: .\templates\all_news.html:20
+msgid "Personal account"
+msgstr "Личный кабинет"
+
+#: .\templates\all_news.html:22 .\templates\flatpages\default.html:29
+msgid "Log in or register"
+msgstr "Войти или зарегистрироваться"
+
+#: .\templates\all_news.html:28
+msgid "Date of publication"
+msgstr "Дата публикации"
+
+#: .\templates\all_news.html:29
+msgid "Summary"
+msgstr "Краткое описание"
+
+#: .\templates\all_news.html:35
+msgid "Change"
+msgstr "Изменить"
+
+#: .\templates\all_news.html:36
+msgid "Delete"
+msgstr "Удалить"
+
+#: .\templates\all_news.html:49
+msgid "Add news or article"
+msgstr "Добавить новость или статью"
+
+#: .\templates\all_news.html:55
+msgid "First page"
+msgstr "Первая страница"
+
+#: .\templates\all_news.html:56
+msgid "Back"
+msgstr "Назад"
+
+#: .\templates\all_news.html:69
+msgid "Forward"
+msgstr "Вперёд"
+
+#: .\templates\all_news.html:70
+msgid "Last page"
+msgstr "Последняя страница"
+
+#: .\templates\flatpages\default.html:37
+msgid "To the main page"
+msgstr "На главную страницу"
+
+#: .\templates\news_add.html:6
+msgid "Add news:"
+msgstr "Добавить новость:"
+
+#: .\templates\news_add.html:11
+msgid "Fill in the fields to create news or article:"
+msgstr "Заполните поля для создания новости или статьи:"
+
+#: .\templates\news_add.html:17
+msgid "Add"
+msgstr "Добавить"

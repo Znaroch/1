@@ -1,0 +1,90 @@
+{% extends 'flatpages/default.html' %}
+{% load i18n %}
+{% load tz %}
+{% load custom_filters %}
+{% load custom_tags %}
+
+{% block title %}
+
+{% get_current_timezone as TIME_ZONE %}
+    <form action="" method="POST">
+        {% csrf_token %}
+        <label for="timezone">Time zone:</label>
+        <select name="timezone">
+            {% for tz in timezones %}
+            <option value="{{ tz }}"{% if tz == TIME_ZONE %} selected{% endif %}>{{ tz }}</option>
+            {% endfor %}
+        </select>
+        <input type="submit" value="Set">
+    </form>
+
+    {{ TIME_ZONE }}
+    {{ current_time|timezone:TIME_ZONE }} <!-- Отображаем время в выбранном часовом поясе  -->
+
+<hr>
+<h1>{% trans 'All news:' %}</h1>
+<a href="{% url 'search' %}"><u><h2>{% trans 'News search:' %}</h2></u></a>
+<hr>
+{% endblock title %}
+
+{% block content %}
+<h2>{% trans 'Number of news items:' %} {{ posts|length }}</h2>
+<hr>
+
+{% if request.user.username %}
+    <h2>{{ request.user.username }}</h2>
+    <button><a href="{% url 'profile' %}">{% trans 'Personal account' %}</a></button>
+{% else %}
+    <button><a href="{% url 'profile' %}">{% trans 'Log in or register' %}</a></button>
+{% endif %}
+<table>
+    <thead>
+        <td> {% trans 'Title' %} </td>
+        <td> {% trans 'Category' %} </td>
+        <td> {% trans 'Date of publication' %} </td>
+        <td> {% trans 'Summary' %} </td>
+    </thead>
+    {% for post in posts %}
+        <tr>
+            <td>
+                <a href="{% url 'news_detail' post.id %}">{{ post.title|censor }}</a>
+                <a href="{% url 'news_edit' post.id %}"><u>{% trans 'Change' %}</u></a>
+                <a href="{% url 'news_delete' post.id %}"><u>{% trans 'Delete' %}</u></a>
+            </td>
+             <td>
+                {% for category in post.category.all %}
+                    <a href="{% url 'category_list' category.id %}">{{ category }}</a>
+                {% endfor %}
+            </td>
+            <td>{{ post.date|date:'d M Y' }}</td>
+            <td>{{ post.text|truncatechars:20|censor }}</td>
+        </tr>
+    {% endfor %}
+</table>
+<hr>
+<a href="{% url 'news_add' %}"><h2>{% trans 'Add news or article' %}</h2></a>
+<hr>
+
+{% if is_paginated %}
+   <!-- Если доступна предыдущая страница, то даём ссылку на неё и самую первую страницу -->
+    {% if page_obj.has_previous %}
+        <a href="?{% url_replace page=1 %}">{% trans 'First page' %}</a>
+        <a href="?{% url_replace page=page_obj.previous_page_number %}">{% trans 'Back' %}</a>
+    {% endif %}
+
+    <!-- Показываем только текущую страницу и ближайшие к ней, чтобы список не тянулся и не захламлял страницу -->
+    {% for num in page_obj.paginator.page_range %}
+        {% if page_obj.number == num %}
+            <a>{{ num }}</a>
+        {% elif num > page_obj.number|add:'-3' and num < page_obj.number|add:'3' %}            <a href="?{% url_replace page=num %}">{{ num }}</a>
+        {% endif %}
+    {% endfor %}
+
+    <!-- Если есть следующая страница, то даём ссылку на неё и на самую последнюю страницу -->
+    {% if page_obj.has_next %}
+        <a href="?{% url_replace page=page_obj.next_page_number %}">{% trans 'Forward' %}</a>
+        <a href="?{% url_replace page=page_obj.paginator.num_pages %}">{% trans 'Last page' %}</a>
+    {% endif %}
+{% endif %}
+
+{% endblock content %}

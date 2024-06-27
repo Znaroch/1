@@ -1,0 +1,203 @@
+19.03.2024 23-08-01 INFO autoreloadWatching for file changes with StatReloader
+19.03.2024 23-08-09 INFO basehttp"GET /news/ HTTP/1.1" 200 8220
+19.03.2024 23-08-11 INFO basehttp"GET /news/home/ HTTP/1.1" 200 8220
+19.03.2024 23-08-57 INFO basehttp"GET /news/profile/ HTTP/1.1" 302 0
+19.03.2024 23-08-57 INFO basehttp"GET /accounts/login/?next=/news/profile/ HTTP/1.1" 200 2083
+19.03.2024 23-09-05 INFO basehttp"POST /accounts/login/ HTTP/1.1" 302 0
+19.03.2024 23-09-05 INFO basehttp"GET /news/profile/ HTTP/1.1" 200 2090
+19.03.2024 23-09-06 INFO basehttp"GET /news/home/ HTTP/1.1" 200 8212
+19.03.2024 23-09-54 INFO autoreloadC:\Users\Sergey\Desktop\News_Portal\News_Portal\News_Portal\settings.py changed, reloading.
+19.03.2024 23-13-55 INFO autoreloadWatching for file changes with StatReloader
+19.03.2024 23-14-00 INFO basehttp"GET /news/profile/ HTTP/1.1" 200 2090
+19.03.2024 23-14-02 INFO basehttp"GET /news/home/ HTTP/1.1" 200 8212
+19.03.2024 23-17-09 INFO autoreloadC:\Users\Sergey\Desktop\News_Portal\News_Portal\News_Portal\settings.py changed, reloading.
+19.03.2024 23-17-10 INFO autoreloadWatching for file changes with StatReloader
+19.03.2024 23-17-21 INFO basehttp"GET /news/profile/ HTTP/1.1" 200 2090
+19.03.2024 23-17-23 INFO basehttp"GET /news/logout/ HTTP/1.1" 200 1420
+19.03.2024 23-17-26 INFO basehttp"POST /accounts/logout/ HTTP/1.1" 302 0
+19.03.2024 23-17-26 INFO basehttp"GET /accounts/login/ HTTP/1.1" 200 2133
+19.03.2024 23-17-30 INFO basehttp"POST /accounts/login/ HTTP/1.1" 302 0
+19.03.2024 23-17-30 INFO basehttp"GET /accounts/confirm-email/ HTTP/1.1" 200 1386
+19.03.2024 23-17-51 INFO basehttp"GET /accounts/confirm-email/Mg:1rmftp:Cvqp7GJEYKtkPAYhYIJBJB2fBcw5vyHx8P198Eirk_w/ HTTP/1.1" 200 1480
+19.03.2024 23-17-56 INFO basehttp"POST /accounts/confirm-email/Mg:1rmfuB:aOAQpDUdEhnbYcVELG1AycJOBAksTYFInzBLgltXAno/ HTTP/1.1" 302 0
+19.03.2024 23-17-56 INFO basehttp"GET /accounts/login/ HTTP/1.1" 200 2150
+19.03.2024 23-17-59 INFO basehttp"POST /accounts/login/ HTTP/1.1" 302 0
+19.03.2024 23-17-59 INFO basehttp"GET /news/profile/ HTTP/1.1" 200 2097
+19.03.2024 23-18-02 INFO basehttp"GET /news/home/ HTTP/1.1" 200 8222
+19.03.2024 23-18-07 INFO basehttp"GET /admin HTTP/1.1" 301 0
+19.03.2024 23-18-07 INFO basehttp"GET /admin/ HTTP/1.1" 200 14608
+19.03.2024 23-18-07 WARNING logNot Found: /static/admin/css/base.css
+19.03.2024 23-18-07 WARNING logNot Found: /static/admin/css/dashboard.css
+19.03.2024 23-18-07 WARNING logNot Found: /static/admin/css/nav_sidebar.css
+19.03.2024 23-18-07 WARNING basehttp"GET /static/admin/css/dashboard.css HTTP/1.1" 404 179
+19.03.2024 23-18-07 WARNING basehttp"GET /static/admin/css/base.css HTTP/1.1" 404 179
+19.03.2024 23-18-07 WARNING logNot Found: /static/admin/css/dark_mode.css
+19.03.2024 23-18-07 WARNING logNot Found: /static/admin/css/responsive.css
+19.03.2024 23-18-07 WARNING basehttp"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 404 179
+19.03.2024 23-18-07 WARNING basehttp"GET /static/admin/css/dark_mode.css HTTP/1.1" 404 179
+19.03.2024 23-18-07 WARNING basehttp"GET /static/admin/css/responsive.css HTTP/1.1" 404 179
+19.03.2024 23-18-07 WARNING logNot Found: /static/admin/js/nav_sidebar.js
+19.03.2024 23-18-07 WARNING logNot Found: /static/admin/js/theme.js
+19.03.2024 23-18-07 WARNING logNot Found: /static/admin/css/responsive.css
+19.03.2024 23-18-07 WARNING basehttp"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 404 179
+19.03.2024 23-18-07 WARNING logNot Found: /static/admin/css/nav_sidebar.css
+19.03.2024 23-18-07 WARNING basehttp"GET /static/admin/js/theme.js HTTP/1.1" 404 179
+19.03.2024 23-18-07 WARNING basehttp"GET /static/admin/css/responsive.css HTTP/1.1" 404 179
+19.03.2024 23-18-07 WARNING basehttp"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 404 179
+19.03.2024 23-18-07 WARNING logNot Found: /static/admin/css/dashboard.css
+19.03.2024 23-18-07 WARNING basehttp"GET /static/admin/css/dashboard.css HTTP/1.1" 404 179
+19.03.2024 23-18-23 INFO basehttp"POST /admin/logout/ HTTP/1.1" 302 0
+19.03.2024 23-18-23 INFO basehttp"GET /accounts/login/ HTTP/1.1" 200 1923
+19.03.2024 23-18-31 INFO basehttp"GET /admin/ HTTP/1.1" 302 0
+19.03.2024 23-18-31 INFO basehttp"GET /admin/login/?next=/admin/ HTTP/1.1" 200 4181
+19.03.2024 23-18-31 WARNING logNot Found: /static/admin/css/base.css
+19.03.2024 23-18-31 WARNING basehttp"GET /static/admin/css/base.css HTTP/1.1" 404 179
+19.03.2024 23-18-31 WARNING logNot Found: /static/admin/css/nav_sidebar.css
+19.03.2024 23-18-31 WARNING logNot Found: /static/admin/css/responsive.css
+19.03.2024 23-18-31 WARNING logNot Found: /static/admin/css/dark_mode.css
+19.03.2024 23-18-31 WARNING logNot Found: /static/admin/css/login.css
+19.03.2024 23-18-31 WARNING basehttp"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 404 179
+19.03.2024 23-18-31 WARNING basehttp"GET /static/admin/css/responsive.css HTTP/1.1" 404 179
+19.03.2024 23-18-31 WARNING basehttp"GET /static/admin/css/dark_mode.css HTTP/1.1" 404 179
+19.03.2024 23-18-31 WARNING basehttp"GET /static/admin/css/login.css HTTP/1.1" 404 179
+19.03.2024 23-18-31 WARNING logNot Found: /static/admin/js/nav_sidebar.js
+19.03.2024 23-18-31 WARNING logNot Found: /static/admin/css/nav_sidebar.css
+19.03.2024 23-18-31 WARNING basehttp"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 404 179
+19.03.2024 23-18-31 WARNING logNot Found: /static/admin/js/theme.js
+19.03.2024 23-18-31 WARNING logNot Found: /static/admin/css/responsive.css
+19.03.2024 23-18-31 WARNING basehttp"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 404 179
+19.03.2024 23-18-31 WARNING basehttp"GET /static/admin/css/responsive.css HTTP/1.1" 404 179
+19.03.2024 23-18-31 WARNING basehttp"GET /static/admin/js/theme.js HTTP/1.1" 404 179
+19.03.2024 23-18-41 INFO basehttp"GET /admin/ HTTP/1.1" 302 0
+19.03.2024 23-18-41 INFO basehttp"GET /admin/login/?next=/admin/ HTTP/1.1" 200 4181
+19.03.2024 23-18-41 WARNING logNot Found: /static/admin/css/base.css
+19.03.2024 23-18-42 WARNING basehttp"GET /static/admin/css/base.css HTTP/1.1" 404 179
+19.03.2024 23-18-42 WARNING logNot Found: /static/admin/css/login.css
+19.03.2024 23-18-42 WARNING logNot Found: /static/admin/css/nav_sidebar.css
+19.03.2024 23-18-42 WARNING logNot Found: /static/admin/css/responsive.css
+19.03.2024 23-18-42 WARNING logNot Found: /static/admin/css/dark_mode.css
+19.03.2024 23-18-42 WARNING basehttp"GET /static/admin/css/login.css HTTP/1.1" 404 179
+19.03.2024 23-18-42 WARNING basehttp"GET /static/admin/css/responsive.css HTTP/1.1" 404 179
+19.03.2024 23-18-42 WARNING basehttp"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 404 179
+19.03.2024 23-18-42 WARNING basehttp"GET /static/admin/css/dark_mode.css HTTP/1.1" 404 179
+19.03.2024 23-18-42 WARNING logNot Found: /static/admin/js/theme.js
+19.03.2024 23-18-42 WARNING basehttp"GET /static/admin/js/theme.js HTTP/1.1" 404 179
+19.03.2024 23-18-42 WARNING logNot Found: /static/admin/css/responsive.css
+19.03.2024 23-18-42 WARNING logNot Found: /static/admin/css/login.css
+19.03.2024 23-18-42 WARNING logNot Found: /static/admin/css/nav_sidebar.css
+19.03.2024 23-18-42 WARNING logNot Found: /static/admin/js/nav_sidebar.js
+19.03.2024 23-18-42 WARNING basehttp"GET /static/admin/css/responsive.css HTTP/1.1" 404 179
+19.03.2024 23-18-42 WARNING basehttp"GET /static/admin/css/login.css HTTP/1.1" 404 179
+19.03.2024 23-18-42 WARNING basehttp"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 404 179
+19.03.2024 23-18-42 WARNING basehttp"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 404 179
+19.03.2024 23-18-49 INFO basehttp"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+19.03.2024 23-18-49 INFO basehttp"GET /admin/ HTTP/1.1" 200 14463
+19.03.2024 23-18-49 WARNING logNot Found: /static/admin/css/base.css
+19.03.2024 23-18-49 WARNING logNot Found: /static/admin/css/nav_sidebar.css
+19.03.2024 23-18-49 WARNING basehttp"GET /static/admin/css/base.css HTTP/1.1" 404 179
+19.03.2024 23-18-49 WARNING logNot Found: /static/admin/css/dashboard.css
+19.03.2024 23-18-49 WARNING logNot Found: /static/admin/css/responsive.css
+19.03.2024 23-18-49 WARNING logNot Found: /static/admin/css/dark_mode.css
+19.03.2024 23-18-49 WARNING basehttp"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 404 179
+19.03.2024 23-18-49 WARNING basehttp"GET /static/admin/css/dashboard.css HTTP/1.1" 404 179
+19.03.2024 23-18-49 WARNING basehttp"GET /static/admin/css/responsive.css HTTP/1.1" 404 179
+19.03.2024 23-18-49 WARNING basehttp"GET /static/admin/css/dark_mode.css HTTP/1.1" 404 179
+19.03.2024 23-18-49 WARNING logNot Found: /static/admin/js/theme.js
+19.03.2024 23-18-49 WARNING logNot Found: /static/admin/js/nav_sidebar.js
+19.03.2024 23-18-49 WARNING basehttp"GET /static/admin/js/theme.js HTTP/1.1" 404 179
+19.03.2024 23-18-49 WARNING logNot Found: /static/admin/css/dashboard.css
+19.03.2024 23-18-49 WARNING basehttp"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 404 179
+19.03.2024 23-18-49 WARNING logNot Found: /static/admin/css/responsive.css
+19.03.2024 23-18-49 WARNING logNot Found: /static/admin/css/nav_sidebar.css
+19.03.2024 23-18-49 WARNING basehttp"GET /static/admin/css/dashboard.css HTTP/1.1" 404 179
+19.03.2024 23-18-49 WARNING basehttp"GET /static/admin/css/responsive.css HTTP/1.1" 404 179
+19.03.2024 23-18-49 WARNING basehttp"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 404 179
+19.03.2024 23-19-00 INFO basehttp"GET /admin/auth/user/1/change/ HTTP/1.1" 200 29143
+19.03.2024 23-19-00 WARNING logNot Found: /static/admin/css/base.css
+19.03.2024 23-19-00 WARNING basehttp"GET /static/admin/css/base.css HTTP/1.1" 404 179
+19.03.2024 23-19-00 WARNING logNot Found: /static/admin/css/dark_mode.css
+19.03.2024 23-19-00 WARNING logNot Found: /static/admin/css/nav_sidebar.css
+19.03.2024 23-19-00 WARNING logNot Found: /static/admin/css/forms.css
+19.03.2024 23-19-00 WARNING basehttp"GET /static/admin/css/dark_mode.css HTTP/1.1" 404 179
+19.03.2024 23-19-00 WARNING logNot Found: /static/admin/js/vendor/jquery/jquery.min.js
+19.03.2024 23-19-00 WARNING basehttp"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 404 179
+19.03.2024 23-19-00 WARNING basehttp"GET /static/admin/css/forms.css HTTP/1.1" 404 179
+19.03.2024 23-19-00 WARNING logNot Found: /static/admin/css/responsive.css
+19.03.2024 23-19-00 INFO basehttp"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+19.03.2024 23-19-00 WARNING basehttp"GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 404 179
+19.03.2024 23-19-00 WARNING basehttp"GET /static/admin/css/responsive.css HTTP/1.1" 404 179
+19.03.2024 23-19-00 WARNING logNot Found: /static/admin/js/calendar.js
+19.03.2024 23-19-00 WARNING logNot Found: /static/admin/js/jquery.init.js
+19.03.2024 23-19-00 WARNING basehttp"GET /static/admin/js/calendar.js HTTP/1.1" 404 179
+19.03.2024 23-19-00 WARNING basehttp"GET /static/admin/js/jquery.init.js HTTP/1.1" 404 179
+19.03.2024 23-19-00 WARNING logNot Found: /static/admin/js/SelectBox.js
+19.03.2024 23-19-00 WARNING logNot Found: /static/admin/js/core.js
+19.03.2024 23-19-00 WARNING logNot Found: /static/admin/js/admin/RelatedObjectLookups.js
+19.03.2024 23-19-00 WARNING logNot Found: /static/admin/js/admin/DateTimeShortcuts.js
+19.03.2024 23-19-00 WARNING basehttp"GET /static/admin/js/core.js HTTP/1.1" 404 179
+19.03.2024 23-19-00 WARNING basehttp"GET /static/admin/js/SelectBox.js HTTP/1.1" 404 179
+19.03.2024 23-19-00 WARNING basehttp"GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 404 179
+19.03.2024 23-19-00 WARNING basehttp"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 404 179
+19.03.2024 23-19-00 WARNING logNot Found: /static/admin/js/actions.js
+19.03.2024 23-19-00 WARNING basehttp"GET /static/admin/js/actions.js HTTP/1.1" 404 179
+19.03.2024 23-19-00 WARNING logNot Found: /static/admin/js/SelectFilter2.js
+19.03.2024 23-19-00 WARNING logNot Found: /static/admin/js/vendor/xregexp/xregexp.min.js
+19.03.2024 23-19-00 WARNING logNot Found: /static/admin/js/urlify.js
+19.03.2024 23-19-00 WARNING logNot Found: /static/admin/js/prepopulate.js
+19.03.2024 23-19-00 WARNING basehttp"GET /static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 404 179
+19.03.2024 23-19-00 WARNING basehttp"GET /static/admin/js/SelectFilter2.js HTTP/1.1" 404 179
+19.03.2024 23-19-00 WARNING logNot Found: /static/admin/js/prepopulate_init.js
+19.03.2024 23-19-00 WARNING basehttp"GET /static/admin/js/urlify.js HTTP/1.1" 404 179
+19.03.2024 23-19-00 WARNING basehttp"GET /static/admin/js/prepopulate.js HTTP/1.1" 404 179
+19.03.2024 23-19-00 WARNING basehttp"GET /static/admin/js/prepopulate_init.js HTTP/1.1" 404 179
+19.03.2024 23-19-00 WARNING logNot Found: /static/admin/img/icon-addlink.svg
+19.03.2024 23-19-00 WARNING basehttp"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 404 179
+19.03.2024 23-19-00 WARNING logNot Found: /static/admin/js/nav_sidebar.js
+19.03.2024 23-19-00 WARNING logNot Found: /static/admin/js/theme.js
+19.03.2024 23-19-00 WARNING logNot Found: /static/admin/css/responsive.css
+19.03.2024 23-19-00 WARNING logNot Found: /static/admin/js/change_form.js
+19.03.2024 23-19-00 WARNING basehttp"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 404 179
+19.03.2024 23-19-00 WARNING basehttp"GET /static/admin/js/theme.js HTTP/1.1" 404 179
+19.03.2024 23-19-00 WARNING basehttp"GET /static/admin/css/responsive.css HTTP/1.1" 404 179
+19.03.2024 23-19-00 WARNING basehttp"GET /static/admin/js/change_form.js HTTP/1.1" 404 179
+19.03.2024 23-23-31 INFO autoreloadWatching for file changes with StatReloader
+19.03.2024 23-23-33 WARNING logNot Found: /
+19.03.2024 23-23-33 WARNING basehttp"GET / HTTP/1.1" 404 179
+19.03.2024 23-23-38 INFO basehttp"GET /news/ HTTP/1.1" 200 8222
+19.03.2024 23-23-42 INFO basehttp"GET /news/profile/ HTTP/1.1" 200 2097
+19.03.2024 23-23-43 INFO basehttp"GET /news/home/ HTTP/1.1" 200 8222
+19.03.2024 23-25-05 INFO autoreloadC:\Users\Sergey\Desktop\News_Portal\News_Portal\News_Portal\settings.py changed, reloading.
+19.03.2024 23-25-06 INFO autoreloadWatching for file changes with StatReloader
+19.03.2024 23-25-21 INFO autoreloadWatching for file changes with StatReloader
+19.03.2024 23-26-14 INFO autoreloadWatching for file changes with StatReloader
+19.03.2024 23-26-26 INFO basehttp"GET /news/home/ HTTP/1.1" 200 8222
+19.03.2024 23-26-27 INFO basehttp"GET /news/profile/ HTTP/1.1" 200 2097
+19.03.2024 23-26-29 INFO basehttp"GET /news/home/ HTTP/1.1" 200 8222
+19.03.2024 23-28-46 INFO autoreloadC:\Users\Sergey\Desktop\News_Portal\News_Portal\News_Portal\settings.py changed, reloading.
+19.03.2024 23-28-47 INFO autoreloadWatching for file changes with StatReloader
+19.03.2024 23-29-03 INFO autoreloadWatching for file changes with StatReloader
+19.03.2024 23-29-08 INFO basehttp"GET /news/profile/ HTTP/1.1" 200 2097
+19.03.2024 23-29-10 INFO basehttp"GET /news/logout/ HTTP/1.1" 200 1201
+19.03.2024 23-29-11 INFO basehttp"POST /accounts/logout/ HTTP/1.1" 302 0
+19.03.2024 23-29-12 INFO basehttp"GET /accounts/login/ HTTP/1.1" 200 2133
+19.03.2024 23-29-18 INFO basehttp"POST /accounts/login/ HTTP/1.1" 302 0
+19.03.2024 23-29-19 INFO basehttp"GET /news/profile/ HTTP/1.1" 200 2090
+19.03.2024 23-29-21 INFO basehttp"GET /news/home/ HTTP/1.1" 200 8212
+19.03.2024 23-34-24 INFO autoreloadC:\Users\Sergey\Desktop\News_Portal\News_Portal\News_Portal\settings.py changed, reloading.
+19.03.2024 23-34-34 INFO autoreloadWatching for file changes with StatReloader
+19.03.2024 23-36-15 INFO autoreloadC:\Users\Sergey\Desktop\News_Portal\News_Portal\News_Portal\settings.py changed, reloading.
+19.03.2024 23-36-16 INFO autoreloadWatching for file changes with StatReloader
+19.03.2024 23-36-26 INFO autoreloadWatching for file changes with StatReloader
+19.03.2024 23-36-37 INFO basehttp"GET /news/profile/ HTTP/1.1" 200 2090
+19.03.2024 23-36-38 INFO basehttp"GET /news/home/ HTTP/1.1" 200 8212
+19.03.2024 23-38-30 INFO autoreloadC:\Users\Sergey\Desktop\News_Portal\News_Portal\News_Portal\settings.py changed, reloading.
+20.03.2024 21-29-30 INFO autoreloadWatching for file changes with StatReloader
+20.03.2024 21-29-34 WARNING logNot Found: /
+20.03.2024 21-29-36 WARNING basehttp"GET / HTTP/1.1" 404 179
+20.03.2024 21-29-38 WARNING logNot Found: /favicon.ico
+20.03.2024 21-29-40 WARNING basehttp"GET /favicon.ico HTTP/1.1" 404 179
+20.03.2024 21-29-45 INFO basehttp"GET /news/ HTTP/1.1" 200 8220
+20.03.2024 21-29-48 INFO basehttp"GET /news/profile/ HTTP/1.1" 302 0
+20.03.2024 21-29-50 INFO basehttp"GET /accounts/login/?next=/news/profile/ HTTP/1.1" 200 2083
+20.03.2024 21-29-53 INFO basehttp"POST /accounts/login/ HTTP/1.1" 302 0
+20.03.2024 21-29-54 INFO basehttp"GET /news/profile/ HTTP/1.1" 200 2090

@@ -1,0 +1,831 @@
+04.04.2024 15-51-26 ERROR C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\utils\log.py Internal Server Error: /news/create/ (<class 'django.template.exceptions.TemplateSyntaxError'>, TemplateSyntaxError("Invalid block tag on line 14: 'form', expected 'endblock'. Did you forget to register or load this tag?"), <traceback object at 0x0000018A8B47B1C0>)
+Traceback (most recent call last):
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'form'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 14: 'form', expected 'endblock'. Did you forget to register or load this tag?
+04.04.2024 15-51-26 ERROR C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\core\servers\basehttp.py "GET /news/create/ HTTP/1.1" 500 176025 None
+04.04.2024 15-52-06 ERROR C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\utils\log.py Internal Server Error: /news/create/ (<class 'django.template.exceptions.TemplateSyntaxError'>, TemplateSyntaxError("Could not parse the remainder: ' field in form' from 'for field in form'"), <traceback object at 0x0000018A8B4EE5C0>)
+Traceback (most recent call last):
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 484, in parse
+    raise self.error(token, e)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 482, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 703, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: ' field in form' from 'for field in form'
+04.04.2024 15-52-06 ERROR C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\core\servers\basehttp.py "GET /news/create/ HTTP/1.1" 500 180761 None
+04.04.2024 15-54-13 ERROR C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\utils\log.py Internal Server Error: /news/create/ (<class 'django.template.exceptions.TemplateSyntaxError'>, TemplateSyntaxError("Invalid block tag on line 14: 'form', expected 'endblock'. Did you forget to register or load this tag?"), <traceback object at 0x0000018A8B41A640>)
+Traceback (most recent call last):
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'form'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 14: 'form', expected 'endblock'. Did you forget to register or load this tag?
+04.04.2024 15-54-13 ERROR C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\core\servers\basehttp.py "GET /news/create/ HTTP/1.1" 500 176025 None
+04.04.2024 15-57-32 ERROR C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\utils\log.py Internal Server Error: /news/create/ (<class 'django.template.exceptions.TemplateSyntaxError'>, TemplateSyntaxError("Invalid block tag on line 14: 'form', expected 'endblock'. Did you forget to register or load this tag?"), <traceback object at 0x0000018A8B669A80>)
+Traceback (most recent call last):
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'form'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 14: 'form', expected 'endblock'. Did you forget to register or load this tag?
+04.04.2024 15-57-32 ERROR C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\core\servers\basehttp.py "GET /news/create/ HTTP/1.1" 500 176065 None
+04.04.2024 16-05-06 ERROR C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\utils\log.py Internal Server Error: /news/create/ (<class 'django.template.exceptions.TemplateSyntaxError'>, TemplateSyntaxError("Invalid block tag on line 16: 'field', expected 'empty' or 'endfor'. Did you forget to register or load this tag?"), <traceback object at 0x0000018A8B3FE980>)
+Traceback (most recent call last):
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'field'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 16: 'field', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+04.04.2024 16-05-06 ERROR C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\core\servers\basehttp.py "GET /news/create/ HTTP/1.1" 500 189344 None
+04.04.2024 17-15-51 ERROR C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\utils\log.py Internal Server Error: /news/create/ (<class 'django.template.exceptions.TemplateSyntaxError'>, TemplateSyntaxError("Could not parse the remainder: '{{' from '{{'"), <traceback object at 0x000001FA19BF8A40>)
+Traceback (most recent call last):
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\templatetags\i18n.py", line 403, in do_translate
+    message_string = parser.compile_filter(bits[1])
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 703, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '{{' from '{{'
+04.04.2024 17-15-51 ERROR C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\core\servers\basehttp.py "GET /news/create/ HTTP/1.1" 500 194682 None
+04.04.2024 17-41-16 ERROR C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\utils\log.py Internal Server Error: /news/create/ (<class 'django.template.exceptions.TemplateSyntaxError'>, TemplateSyntaxError("Could not parse the remainder: '{{language.code}}' from '{{language.code}}'"), <traceback object at 0x0000014CCA6C9600>)
+Traceback (most recent call last):
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\smartif.py", line 179, in translate_token
+    op = OPERATORS[token]
+KeyError: '{{language.code}}'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\defaulttags.py", line 952, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\defaulttags.py", line 885, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\smartif.py", line 170, in __init__
+    mapped_tokens.append(self.translate_token(token))
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\smartif.py", line 181, in translate_token
+    return self.create_var(token)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\defaulttags.py", line 888, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 703, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '{{language.code}}' from '{{language.code}}'
+04.04.2024 17-41-16 ERROR C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\core\servers\basehttp.py "GET /news/create/ HTTP/1.1" 500 224783 None
+04.04.2024 17-44-09 ERROR C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\utils\log.py Internal Server Error: /news/create/ (<class 'django.template.exceptions.TemplateSyntaxError'>, TemplateSyntaxError("Could not parse the remainder: '=' from '='"), <traceback object at 0x0000014CCA9E4A00>)
+Traceback (most recent call last):
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\smartif.py", line 179, in translate_token
+    op = OPERATORS[token]
+KeyError: '='
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\defaulttags.py", line 952, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\defaulttags.py", line 885, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\smartif.py", line 170, in __init__
+    mapped_tokens.append(self.translate_token(token))
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\smartif.py", line 181, in translate_token
+    return self.create_var(token)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\defaulttags.py", line 888, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 703, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '=' from '='
+04.04.2024 17-44-09 ERROR C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\core\servers\basehttp.py "GET /news/create/ HTTP/1.1" 500 224395 None
+06.04.2024 15-19-55 ERROR C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\utils\log.py Internal Server Error: /admin/login/ (<class 'django.db.utils.OperationalError'>, OperationalError('database is locked'), <traceback object at 0x0000024F32594A40>)
+Traceback (most recent call last):
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\contrib\admin\sites.py", line 441, in login
+    return LoginView.as_view(**defaults)(request)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\views\decorators\debug.py", line 92, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\contrib\auth\views.py", line 90, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\views\generic\edit.py", line 153, in post
+    return self.form_valid(form)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\contrib\auth\views.py", line 109, in form_valid
+    auth_login(self.request, form.get_user())
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\contrib\auth\__init__.py", line 116, in login
+    request.session.flush()
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\contrib\sessions\backends\base.py", line 295, in flush
+    self.delete()
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\contrib\sessions\backends\db.py", line 104, in delete
+    self.model.objects.get(session_key=session_key).delete()
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\db\models\base.py", line 1132, in delete
+    return collector.delete()
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\db\models\deletion.py", line 453, in delete
+    count = sql.DeleteQuery(model).delete_batch(
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\db\models\sql\subqueries.py", line 42, in delete_batch
+    num_deleted += self.do_query(
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\db\models\sql\subqueries.py", line 20, in do_query
+    cursor = self.get_compiler(using).execute_sql(CURSOR)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+django.db.utils.OperationalError: database is locked
+06.04.2024 15-19-55 ERROR C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\core\servers\basehttp.py "POST /admin/login/?next=/admin/ HTTP/1.1" 500 213839 None
+06.04.2024 15-20-25 ERROR C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\utils\log.py Internal Server Error: /accounts/logout/ (<class 'django.db.utils.OperationalError'>, OperationalError('database is locked'), <traceback object at 0x0000024F32199180>)
+Traceback (most recent call last):
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\allauth\account\views.py", line 946, in post
+    self.logout()
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\allauth\account\views.py", line 149, in logout
+    adapter.logout(self.request)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\allauth\account\adapter.py", line 507, in logout
+    django_logout(request)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\contrib\auth\__init__.py", line 158, in logout
+    request.session.flush()
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\contrib\sessions\backends\base.py", line 295, in flush
+    self.delete()
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\contrib\sessions\backends\db.py", line 104, in delete
+    self.model.objects.get(session_key=session_key).delete()
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\db\models\base.py", line 1132, in delete
+    return collector.delete()
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\db\models\deletion.py", line 453, in delete
+    count = sql.DeleteQuery(model).delete_batch(
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\db\models\sql\subqueries.py", line 42, in delete_batch
+    num_deleted += self.do_query(
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\db\models\sql\subqueries.py", line 20, in do_query
+    cursor = self.get_compiler(using).execute_sql(CURSOR)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+django.db.utils.OperationalError: database is locked
+06.04.2024 15-20-25 ERROR C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\core\servers\basehttp.py "POST /accounts/logout/ HTTP/1.1" 500 163197 None
+06.04.2024 15-20-43 ERROR C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\utils\log.py Internal Server Error: /news/create/ (<class 'kombu.exceptions.OperationalError'>, OperationalError('Error 10061 connecting to localhost:6379. Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение.'), <traceback object at 0x0000024F321E2800>)
+Traceback (most recent call last):
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\redis\connection.py", line 264, in connect
+    sock = self.retry.call_with_retry(
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\redis\retry.py", line 46, in call_with_retry
+    return do()
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\redis\connection.py", line 265, in <lambda>
+    lambda: self._connect(), lambda error: self.disconnect(error)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\redis\connection.py", line 627, in _connect
+    raise err
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\redis\connection.py", line 615, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\celery\backends\redis.py", line 127, in reconnect_on_error
+    yield
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\celery\backends\redis.py", line 177, in _consume_from
+    self._pubsub.subscribe(key)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\redis\client.py", line 916, in subscribe
+    ret_val = self.execute_command("SUBSCRIBE", *new_channels.keys())
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\redis\client.py", line 749, in execute_command
+    self.connection = self.connection_pool.get_connection(
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\redis\connection.py", line 1086, in get_connection
+    connection.connect()
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\redis\connection.py", line 270, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to localhost:6379. Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\redis\connection.py", line 264, in connect
+    sock = self.retry.call_with_retry(
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\redis\retry.py", line 46, in call_with_retry
+    return do()
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\redis\connection.py", line 265, in <lambda>
+    lambda: self._connect(), lambda error: self.disconnect(error)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\redis\connection.py", line 627, in _connect
+    raise err
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\redis\connection.py", line 615, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\kombu\connection.py", line 472, in _reraise_as_library_errors
+    yield
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\celery\app\base.py", line 798, in send_task
+    self.backend.on_task_call(P, task_id)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\celery\backends\redis.py", line 373, in on_task_call
+    self.result_consumer.consume_from(task_id)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\celery\backends\redis.py", line 169, in consume_from
+    return self.start(task_id)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\celery\backends\redis.py", line 147, in start
+    self._consume_from(initial_task_id)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\celery\backends\redis.py", line 176, in _consume_from
+    with self.reconnect_on_error():
+  File "C:\Program Files\Python310\lib\contextlib.py", line 153, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\celery\backends\redis.py", line 130, in reconnect_on_error
+    self._ensure(self._reconnect_pubsub, ())
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\celery\backends\redis.py", line 384, in ensure
+    return retry_over_time(
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\kombu\utils\functional.py", line 318, in retry_over_time
+    return fun(*args, **kwargs)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\celery\backends\redis.py", line 106, in _reconnect_pubsub
+    metas = self.backend.client.mget(self.subscribed_to)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\redis\commands\core.py", line 2015, in mget
+    return self.execute_command("MGET", *args, **options)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\redis\client.py", line 533, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\redis\connection.py", line 1086, in get_connection
+    connection.connect()
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\redis\connection.py", line 270, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to localhost:6379. Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\contrib\auth\mixins.py", line 109, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\views\generic\edit.py", line 184, in post
+    return super().post(request, *args, **kwargs)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\views\generic\edit.py", line 153, in post
+    return self.form_valid(form)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\views\generic\edit.py", line 135, in form_valid
+    self.object = form.save()
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\forms\models.py", line 543, in save
+    self._save_m2m()
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\forms\models.py", line 524, in _save_m2m
+    f.save_form_data(self.instance, cleaned_data[f.name])
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\db\models\fields\related.py", line 1956, in save_form_data
+    getattr(instance, self.attname).set(data)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\db\models\fields\related_descriptors.py", line 1236, in set
+    self.add(*new_objs, through_defaults=through_defaults)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\db\models\fields\related_descriptors.py", line 1137, in add
+    self._add_items(
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\db\models\fields\related_descriptors.py", line 1447, in _add_items
+    signals.m2m_changed.send(
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\dispatch\dispatcher.py", line 176, in send
+    return [
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\dispatch\dispatcher.py", line 177, in <listcomp>
+    (receiver, receiver(signal=self, sender=sender, **named))
+  File "C:\Users\Sergey\Desktop\News_Portal\News_Portal\news_p\signals.py", line 47, in notify_about_new_post
+    send_mails_subscribers_new_post.delay(instance.pk)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\celery\app\task.py", line 444, in delay
+    return self.apply_async(args, kwargs)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\celery\app\task.py", line 594, in apply_async
+    return app.send_task(
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\celery\app\base.py", line 796, in send_task
+    with P.connection._reraise_as_library_errors():
+  File "C:\Program Files\Python310\lib\contextlib.py", line 153, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\kombu\connection.py", line 476, in _reraise_as_library_errors
+    raise ConnectionError(str(exc)) from exc
+kombu.exceptions.OperationalError: Error 10061 connecting to localhost:6379. Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение.
+06.04.2024 15-20-43 ERROR C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\core\servers\basehttp.py "POST /news/create/ HTTP/1.1" 500 319996 None
+07.04.2024 13-18-28 ERROR C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\utils\log.py Internal Server Error: /news/ (<class 'django.utils.datastructures.MultiValueDictKeyError'>, MultiValueDictKeyError('timezone'), <traceback object at 0x0000024ADED40D80>)
+Traceback (most recent call last):
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\utils\datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'timezone'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\Sergey\Desktop\News_Portal\News_Portal\news_p\views.py", line 38, in post
+    request.session['django_timezone'] = request.POST['timezone']
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\utils\datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'timezone'
+07.04.2024 13-18-28 ERROR C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\core\servers\basehttp.py "POST /news/ HTTP/1.1" 500 87832 None
+07.04.2024 13-22-04 ERROR C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\utils\log.py Internal Server Error: /news/ (<class 'django.template.exceptions.TemplateSyntaxError'>, TemplateSyntaxError("Invalid block tag on line 60: 'get_current_timezone'. Did you forget to register or load this tag?"), <traceback object at 0x0000024ADEE06940>)
+Traceback (most recent call last):
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'get_current_timezone'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\template\base.py", line 568, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 60: 'get_current_timezone'. Did you forget to register or load this tag?
+07.04.2024 13-22-04 ERROR C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\core\servers\basehttp.py "GET /news/ HTTP/1.1" 500 194096 None
+07.04.2024 13-22-54 ERROR C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\utils\log.py Internal Server Error: /news/ (<class 'django.utils.datastructures.MultiValueDictKeyError'>, MultiValueDictKeyError('timezone'), <traceback object at 0x0000024ADF006900>)
+Traceback (most recent call last):
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\utils\datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'timezone'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\Sergey\Desktop\News_Portal\News_Portal\news_p\views.py", line 38, in post
+    request.session['django_timezone'] = request.POST['timezone']
+  File "C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\utils\datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'timezone'
+07.04.2024 13-22-55 ERROR C:\Users\Sergey\Desktop\News_Portal\venv\lib\site-packages\django\core\servers\basehttp.py "POST /news/ HTTP/1.1" 500 87969 None

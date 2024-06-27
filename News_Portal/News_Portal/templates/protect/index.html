@@ -1,0 +1,24 @@
+{% extends 'flatpages/default.html' %}
+{% block title %}
+<head>
+    <meta charset="UTF-8">
+    <title><Личная информация</title>
+</head>
+{% endblock %}
+{% block content %}
+<body>
+    <h1>Личный кабинет:</h1>
+    <hr>
+    <button><a href="{% url 'home' %}">На главную страницу</a></button>
+    <button><a href="{% url 'logout' %}">Выйти</a> </button>
+    {% if is_not_authors %}
+        <button><a href="{% url 'upgrade' %}">Стать автором</a> </button>
+    {% endif %}
+    <h2>Ваш логин: {{ request.user.username }}</h2>
+    <h2>Адрес электронной почты: {{ request.user.email }}</h2>
+    <h2>Группы пользователя: {% for group in user.groups.all %} {{ group.name }}{% endfor %}</h2>
+    <h2>Подписки на категории:  </h2>
+    <hr>
+
+</body>
+{% endblock %}
